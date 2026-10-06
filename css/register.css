@@ -1,0 +1,102 @@
+.logo {
+    width: 200px;
+    position:absolute;
+    top: 2%;
+    left: 10%;
+  }
+body{
+    background-image: url("The\ table\ tennis\ player\ serving\ containing\ action\,\ activity\,\ and\ background\ \(2\).jfif");
+  
+    background-repeat: no-repeat ;   
+     display: flex;
+    background-attachment:scroll;
+  justify-content: center;
+  background-size: cover;
+  background: size 90px;
+  
+  
+  }
+  .registerbtn:hover{
+    color: rgb(245, 247, 245);
+  }
+  ::placeholder {
+    color: rgba(241, 245, 247, 0.767);
+  }
+  * {
+    box-sizing: border-box;
+  
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg, #ceee17f1 , #09aab6f1, #5dd6ccf1);
+    width: 530px;
+    margin-top: 100px;
+    border-radius: 5px;
+    height: 850px;
+  }
+  .container h1{
+      text-align: center;
+      
+  }
+  label{
+      font-size: 17px;
+      font-weight: bold;
+  }
+ 
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: rgba(5, 39, 56, 0.342);
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    background-color: rgb(220, 220, 228);
+    outline: none;
+  }
+  
+  form .button{
+    position: relative;
+    bottom: 36px;
+    height: 45px;
+    margin: 35px 0
+  }
+  form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #0d5686, #9b59b6);
+  }
+  form .button input:hover{
+   /* transform: scale(0.99); */
+   background: linear-gradient(-135deg, #0d5686, #9b59b6);
+   }
+  
+  a {
+    color: rgb(33, 22, 224);
+    cursor : pointer;
+  }
+  
+  .login{
+      position: relative;
+      bottom: 40px;
+      text-align: center;
+  }

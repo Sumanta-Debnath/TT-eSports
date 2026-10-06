@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>trainer4</title>
+    <link rel="stylesheet" type="text/CSS" href="../css/trainer3.css" media="screen"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"/>
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet"/>
+    </head>
+  <body>
+  
+      <img src="../images/branding/logo1.png" class="logo" />
+
+      
+  
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="viewprofile.html">VIEW PROFILE</a></li>
+          <li><a href="#help">HELP</a></li>
+          <li><a href="#footer">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="../images/branding/icon.png"/>
+    </div>
+    
+    <section id="service">
+      <div class="title-text">
+          <h1>Anthony Amalraj</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+              <img src="../images/trainers/trainer4.jpeg"/>
+              <br><br><br>
+              <div class="details">
+                <h4 align="left">AGE: &nbsp; 32</h4>
+                <br>
+                <h4 align="left">TRAINER ID: &nbsp; DS956</h4>
+                <br>
+                <h4 align="left">YEARS OF EXPERIENCE: &nbsp; 7 Years</h4>
+                <br>
+                <h4 align="left"> STUDENTS TRAINED: &nbsp; 600+ Students</h4>
+                <br>
+                <h4 align="left">RATINGS: &nbsp;
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </h4>
+                </div>
+        </div>
+        </div>
+       
+    </section>
+      <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </section>
+
+    <script>
+      let menuBtn = document
+        .getElementById("menuBtn")
+        .addEventListener("click", function () {
+          if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+            menu.src = "../images/branding/close.png";
+          } else {
+            sideNav.style.right = "-250px";
+            menu.src = "../images/branding/menu.png";
+          }
+        });
+      let sideNav = document.getElementById("sideNav");
+      let menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+
+      let scroll = new SmothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+    </script>
+  </body>
+</html>

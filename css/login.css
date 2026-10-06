@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: rgba(255, 254, 254, 0.664);
+    background-image: url('../images/backgrounds/table-tennis.jpg'); 
+    background-size : cover;
+}
+.container {
+    background: rgba(0,0,0,.7);
+    overflow: hidden;
+    box-shadow: 0 0 1px #000;
+}
+.container h1 {
+    width: 30%;
+    margin: 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 4px solid rgba(10, 79, 148, 0.747);
+    font-size: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.form div {margin: 20px;}
+.form div p {margin-bottom: 20px;}
+.form div input:not([type = 'checkbox']) {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    color: rgba(242, 246, 247, 0.986);
+}
+.form div:nth-child(1) input ,
+.form div:nth-child(2) input {
+    background:  rgba(255,255,255,.3);
+}
+.form div:nth-child(1) input:hover ,
+.form div:nth-child(2) input:hover 
+{
+    border: 1px solid rgb(14, 75, 136);
+}
+input[type = 'button'] 
+{
+    font-size :20px;
+    color: rgba(255, 255, 255, 0.288);
+    background: rgb(7, 72, 138);
+    cursor: pointer;
+    border:crimson;
+}
+input:hover[type = 'button'] {
+    background: rgb(19, 96, 173);
+}
+hr {
+    border: solid 1px rgba(255, 255, 255, 0.397);
+    margin: 10px 20px;
+}
+.text {
+    margin-right: 20px;
+}
+.text a {
+    color: #fff;
+    float: right;
+    text-decoration: none;
+}
+.text a:hover 
+{
+    color: rgb(32, 48, 65);
+}
+.sign-up {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px ;
+}
+.sign-up a {color: rgb(110, 95, 46);}

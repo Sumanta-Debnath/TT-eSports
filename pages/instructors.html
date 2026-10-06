@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>instructors</title>
+    <link rel="stylesheet" href="../css/instructors.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"/>
+      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+  <body>
+    <img src="../images/branding/logo1.png" class="logo" />
+     
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="viewprofile.html">VIEW PROFILE</a></li>
+          <li><a href="#help">HELP</a></li>
+          <li><a href="#footer">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="../images/branding/icon.png"/>
+    </div>
+
+    <section id="service">
+      <div class="title-text">
+        <h1>QUALIFIED INSTRUCTORS</h1>
+        <br>
+        <br>
+        <br>
+      </div>
+        <div class="service-box"> 
+        <div class="single-service">
+          <img src="../images/training/download.jpg"/>
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h3>Jay P. Mishra</h3>
+            <p><a href="trainer1.html">
+              <button style="font-size:15px;background-color:#2ad7ee; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                View Details</button></a></p>
+          </div>
+        </div>
+        <div class="single-service">
+          <img src="../images/training/famous.png" />
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h3>Suresh Yadav</h3>
+            <p><a href="trainer2.html">
+              <button style="font-size:15px;background-color:#2ad7ee; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                View Details</button></a></p>
+         </div>
+        </div>
+        <div class="single-service">
+          <img src="../images/trainers/sou.gif" />
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h3>Kishan Reddy</h3>
+            <p><a href="trainer3.html">
+              <button style="font-size:15px;background-color:#2ad7ee; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                View Details</button></a></p>
+         </div>
+        </div>
+        <div class="single-service">
+          <img src="../images/trainers/antony.jpeg" />
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h3>Anthony Amalraj</h3>
+            <p><a href="trainer4.html">
+              <button style="font-size:15px;background-color:#2ad7ee; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                View Details</button></a></p>
+         </div>
+        </div>
+        <div class="single-service">
+          <img src="../images/trainers/venugopal.jpeg" />
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h3>Venugopal Chandrasekhar</h3>
+            <p><a href="trainer5.html">
+              <button style="font-size:15px;background-color:#2ad7ee; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                View Details</button></a></p>
+         </div>
+        </div>
+        <div class="single-service">
+          <img src="../images/trainers/venugopal.jpeg" />
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h3>Achanta Kulashekaran</h3>
+            <p><a href="trainer6.html">
+              <button style="font-size:15px;background-color:#2ad7ee; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                View Details</button></a></p>
+         </div>
+        </div>
+        
+    </section>
+      <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </section>
+
+    <script>
+      let menuBtn = document
+        .getElementById("menuBtn")
+        .addEventListener("click", function () {
+          if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+            menu.src = "../images/branding/close.png";
+          } else {
+            sideNav.style.right = "-250px";
+            menu.src = "../images/branding/menu.png";
+          }
+        });
+      let sideNav = document.getElementById("sideNav");
+      let menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+
+      let scroll = new SmothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+    </script>
+  </body>
+</html>
